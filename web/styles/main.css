@@ -1,15 +1,16 @@
 body{
     margin: 0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(0deg, grey, transparent);
 }
 
 .container-NavBar{
-    height: 100vh;
+    position: absolute;
+    margin-top: 98vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -17,14 +18,22 @@ body{
 }
 
 .navBar{
-    width: 70%;
+    position: fixed;
+    width: auto;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.308);
-    filter: drop-shadow(10px 10px 6px red);
-    border-radius: 15px 15px 0 0;
+    background-color: rgba(78, 78, 78, 0.308);
+    filter: drop-shadow(2px 2px 4px rgb(71, 95, 126));
+    border-radius: 15px ;
+    margin-bottom: 10px;
+    padding: 0 20px 0 20px;
+
 }
 
+.job{
+    font-size: 2vw;
+    width: 100%;    
+}
 .navBar .navBarBtn{
     padding: 10px;
     border-radius: 50%;
@@ -33,8 +42,173 @@ body{
     cursor: pointer;
 }
 
+.navBar.navBarBtn a{
+    color: black!important;
+}
+
 .navBar .navBarBtn:hover{
     color: white;
     background: rgb(67, 67, 241);
     transition: .2s;
+}
+
+.IntroSection{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    background: linear-gradient(0deg, rgb(190, 188, 188), transparent);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Intro{
+    width: 100%;
+}
+
+.Intro .IntroInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Intro .IntroImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Intro .cargo{
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Intro .president{
+    font-size: 3vw;
+}
+
+.Intro .ex{
+    animation: ex 2s infinite;
+}
+
+.IntroImg img{
+    border-radius: 15px;
+    width: 60%;
+    filter: drop-shadow(5px 5px 5px gray);
+}
+
+.bigName{
+    font-size: 4vw;
+}
+
+.line{
+    height: 30vh;
+    border: 1px solid rgba(155, 155, 155, 0.462);
+}
+
+.SkillSection{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    background: linear-gradient(0deg, gray, transparent);
+}
+
+.SkillSection .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SkillSection .title{
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.SkillSection .Skills{
+    width: 100%;
+    text-align: center;
+}
+
+.SkillSection .Skills .skill{
+    border: gray 1px solid;
+    padding: 3px;
+    width: auto;
+    margin: 0;
+    font-size: 2vw;
+}
+
+.SkillSection .bottom{
+    width: 100%;
+    text-align: center;
+}
+
+
+.exper{
+    max-width: 40vw;
+    text-align: justify;
+    font-size: 2vw;
+}
+
+
+.contactSection{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(0deg, grey, transparent);
+}
+
+.contactame{
+    font-size: 4vw;
+}
+
+.twt{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #00acee;
+    background-color: #00acee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.twt i{
+    margin-right: 5px;
+}
+
+.lnk{
+    text-decoration: none;
+    color: white;
+    border: 2px solid #0e76a8;
+    background-color: #0e76a8;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.lnk i{
+    margin-right: 5px;
+}
+
+.nave{
+    margin-top: 100px;
+    width: 50vw;
+}
+@keyframes ex {
+    0%{
+        color: black;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: black;
+    }
 }

@@ -12,19 +12,79 @@
     <!--MATERIAL ICONS-->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Document</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+<script src="https://kit.fontawesome.com/8c2c20905b.js" crossorigin="anonymous"></script>
+        <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <div class="container-NavBar">
             <div class="navBar">
-                <button class="navBarBtn"><span class="material-symbols-outlined">home</span></button>
-                <button class="navBarBtn"><span class="material-symbols-outlined">person</span></button>
+                <button class="navBarBtn"><a href="#introSection"><span class="material-symbols-outlined">home</span></a></button>
+                <button class="navBarBtn"><a href="#SkillSection"><span class="material-symbols-outlined">person</span></a></button>
                 <button class="navBarBtn"><span class="material-symbols-outlined">draft</span></button>
             </div>
         </div>
-        Contenido principal
+        <section id="introSection" class="IntroSection">
+            <div class="Intro">
+                
+                <div class="IntroImg">
+                    <img src="../styles/profile.jpeg" alt="">
+                </div>
+                <div class="IntroInfo">
+                    <h2 class="bigName">Zaphod Beeblebrox</h2>
+                </div>
+                <span class="cargo"><h4 class="ex">Ex - </h4><h1 class="president">Presidente del gobierno galactico</h1></span>
+                
+            </div>
+        </section>
+        <section id="SkillSection" class="SkillSection">
+            <div class="top">
+                <div>
+                    <div class="title">
+                        <h1>Habilidades</h1>
+                    </div>
+                    <div class="Skills">
+                        <p class="skill">Extrovertido</p>
+                        <p class="skill">Indigno</p>
+                        <p class="skill">Irresponsable</p>
+                        <p class="skill">Imaginativo</p>
+                        <p class="skill">Astuto</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <div class="title">
+                        <h1>Experiencias</h1>
+                    </div>
+                    <p class="exper">Fui el inventor del Gargle Blaster pangaláctico y la unica persona viva en toda la galaxia capaz de beberse mas de tres de una sola vez.</p>
+                    <p class="exper"> Gracias a mi ingenio, mi belleza y a mi cargo como presidente del imperio galáctico “tome prestada” la nave Corazon de Oro que hasta ese momento era propiedad del Gobierno Galáctico.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="title">
+                    <h1>Trabajo</h1>
+                </div>
+                <p class="job">Presidente Imperial del gobierno galáctico:
+                    Como presidente de la galaxia mi trabajo consistía en desviar la atención de los verdaderos gobernantes del universo para lo cual y gracias a mis habilidades únicas hice un trabajo ejemplar.</p>
+            </div>
+        </section>
+        <section class="contactSection">
+            <div class="title contactame">
+                <h1>CONTÁCTAME</h1>
+            </div>
+            <div>
+                <a class="twt" href="https://twitter.com/Z_Beeb"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                <a class="lnk" href="https://www.linkedin.com/in/zaphod-b-1824b6179/"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            </div>
+            <img class="nave" src="../styles/nave-removebg-preview.png" alt="">
+        </section>
     </div>
 </body>
 
